@@ -1,0 +1,20 @@
+{
+  "name": "cucumber-test",
+  "scripts": {
+    "test": "npx wdio && node killDriver"
+  },
+  "dependencies": {
+    "babel-preset-env": "~1.7.0",
+    "babel-register": "~6.26.0",
+    "chai": "~4.1.2",
+    "ps-node": "^0.1.6",
+    "wdio-cucumber-framework": "~2.2.8",
+    "wdio-spec-reporter": "~0.1.2",
+    "webdriverio": "4.13.2"
+  },
+  "devDependencies": {
+    "babel-core": "~6.26.3",
+    "babel-polyfill": "~6.26.0",
+    "wdio-selenium-standalone-service": "0.0.11"
+  }
+}
