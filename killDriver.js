@@ -1,4 +1,4 @@
-var ps = require('ps-node');
+const ps = require('ps-node');
 
 ps.lookup({
     command: 'chromedriver'
@@ -6,7 +6,6 @@ ps.lookup({
     if (err) {
         throw new Error( err );
     }
-
     resultList.forEach(function( process ){
         if( process ){
             ps.kill( process.pid, 'SIGKILL', function( err ) {

@@ -20,11 +20,13 @@ exports.config = {
     framework: 'cucumber',
     reporters: ['spec'],
     cucumberOpts: {
+        // show full backtrace for errors
+                backtrace: true,
         compiler: [
             'js:babel-register',
         ],
         failAmbiguousDefinitions: true,
-        failFast: false,
+                failFast: true,
         ignoreUndefinedDefinitions: false,
         snippets: true,
         source: true,
